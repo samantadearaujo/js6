@@ -19,6 +19,17 @@ for (i = 0; i < close.length; i++) {
   }
 }
 
+// Click on a edit button to hide the current list item
+var edit = document.getElementsByClassName("edit");
+var i;
+for (i = 0; i < close.length; i++) {
+  edit[i].onclick = function() {
+    var div = this.parentElement;
+    div.style.display = "none";
+  }
+}
+
+
 // Add a "checked" symbol when clicking on a list item
 var list = document.querySelector('ul');
 list.addEventListener('click', function(ev) {
@@ -52,6 +63,21 @@ function newElement() {
       div.style.display = "none";
     }
   }
+ //edit
+ var spanEdit = document.createElement("SPAN");
+  var txtEdit = document.createTextNode("edit");
+  spanEdit.className = "edit";
+  spanEdit.appendChild(txtEdit);
+  li.appendChild(spanEdit);
+
+  for (i = 0; i < edit.length; i++) {
+    edit[i].onclick = function() {
+      console.log(i);
+      //var div = this.parentElement;
+      //div.style.display = "none";
+    }
+  }
+
 }
 
 var listElement = document.querySelector('#app #myUL');
