@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Curso JavaScript</title>
+    </head>
+    <body>
+
+
+        <script>
+         //JavaScript
+        
+        var usuarios = [
+            {
+                nome : "Diego",
+                habilidades:["Javascript","ReactJS","Redux"]
+            },
+            {
+                nome:"Gabriel",
+                habilidades: ["VueJS","Ruby on Rails","Elixir"]
+            }
+        ];
+
+        
+         var mensagem = "";
+
+         for( usuario of usuarios){
+             console.log("O " + usuario.nome 
+                              + " possui as habilidades: "
+                              + "'"  
+                              + usuario.habilidades.join("','")) 
+                              + "'";
+         }
+
+         //for(i = 0; i < usuarios.length; i++){
+         //   mensagem +=  "O " + usuarios[i].nome;
+         //   mensagem +=  " possui as habilidades: " + usuarios[i].habilidades.join();
+         //   mensagem += "\n";
+//
+         //}   
+
+         //console.log(mensagem);
+
+       </script>
+    </body>
+</html>
