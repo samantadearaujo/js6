@@ -1,13 +1,23 @@
 
-const usuario = {
-    nome:'Samanta',
-    idade: 32
+const nome = "samanta";
+const idade = 32;
+const cliente = {
+    nome,
+    idade
 }
 
-console.log(`Meu nome é ${usuario.nome} e tenho ${usuario.idade} anos`)
+console.log(cliente.nome);
+
+///Aula 05
+// const usuario = {
+//     nome:'Samanta',
+//     idade: 32
+// }
+
+// console.log(`Meu nome é ${usuario.nome} e tenho ${usuario.idade} anos`)
 
 
-const array = [0,1,2,3,4,5,6];
+// const array = [0,1,2,3,4,5,6];
 
 
 

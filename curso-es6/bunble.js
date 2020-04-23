@@ -1,10 +1,19 @@
 "use strict";
 
-var usuario = {
-  nome: 'Samanta',
-  idade: 32
+var nome = "samanta";
+var idade = 32;
+var cliente = {
+  nome: nome,
+  idade: idade
 };
-console.log("Meu nome \xE9 ".concat(usuario.nome, " e tenho ").concat(usuario.idade, " anos")); // const usuario = {
+console.log(cliente.nome); ///Aula 05
+// const usuario = {
+//     nome:'Samanta',
+//     idade: 32
+// }
+// console.log(`Meu nome é ${usuario.nome} e tenho ${usuario.idade} anos`)
+// const array = [0,1,2,3,4,5,6];
+// const usuario = {
 //     nome: 'Samanta',
 //     idade:32,
 //     endereco: {
